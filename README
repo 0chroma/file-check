@@ -1,0 +1,24 @@
+Description:
+
+	This is a small script that can be used to test storage medium for flaws. It writes random text to a file of your choosing, and then generates an MD5 hash of it's contents. When the program checks the file, it re-hashes the contents, and if the two hashes don't match, it tells you that the contents have changed.
+
+Running the program:
+
+	You need to install the following:
+	 * Python
+	 * GTK+ Runtime
+	 * PyGTK
+	Most linux distributions should already have these. If you have Windows or OSX, make sure all of these are installed. OSX should have python already installed.
+
+	Once all of those are installed, you will be able to launch it by double clicking "filecheck.py" (or running "python filecheck.py" in a terminal).
+Usage:
+	When the program runs, you will see a dialog with two buttons, and a text box.
+
+	Start by clicking on the "Write File" button. A file selector dialog will appear. Navigate to the medium of your choosing (floppy disk, flash drive, hard drive, etc.). and enter a filename into the box. ("file.txt" will do, but any filename will work.) It will then write to the file.
+
+	Remove the storage medium. If you're stress testing, now you can stress-test the device. If not, reinsert the medium. When you're ready to test it again, insert the storage medium into the drive/port again, and click on "Check file". The program will tell you if the file has changed, has not changed, or if it could not open the file.
+
+License:
+
+	This program is licensed under the BSD License. This allows you to incorporate it in another program, modify it, and redistribute it (along with your changes) freely. See LICENSE for more details
+
